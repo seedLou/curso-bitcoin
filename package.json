@@ -1,0 +1,25 @@
+{
+  "name": "fredy-bits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": ["bitcoin","ethereum","criptomoneda","criptos","trading","wallet"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Lourdes Reyes",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bootstrap":"^4.0.0"
+  },
+  "description": "Página de emprendimientos orientados a las divisas digitales",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  }
+}

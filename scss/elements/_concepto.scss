@@ -1,0 +1,21 @@
+/* CONCEPTO EMPIEZA*/
+
+.concepto-container{
+    margin-bottom: $margin-bigger-size;
+    margin-top: $margin-bigger-size;
+    background-image: linear-gradient($coin-color, $coin-color-darker);
+}
+
+.bodyVideos{
+    background-color: $light-grey;
+}
+
+.mover{
+    padding: $padding-small-size;
+}
+
+.video{
+	border: solid 1px $coin-color-light;
+}
+
+/* CONCEPTO TERMINA */

@@ -1,0 +1,56 @@
+/* FORM EMPIEZA */
+
+#indexForm{
+    background-color: $light-grey;
+    height: 100%;
+
+    form{background-color: $light-grey;}
+
+    legend{
+        text-align: center;
+        position: relative;
+        top: 10px;
+        margin-bottom: $margin-small-size;
+        font-size: $font-big-size;
+        color:$coin-white;
+        width: 100%;
+    }
+}
+
+%indexForm-helper{
+    font-size: $font-medium-size;
+    margin: $margin-medium-size auto $margin-medium-size auto;
+    padding: $padding-medium-size;
+    flex-grow: 1;
+    border: none;
+}
+
+#indexForm{
+
+    input{
+        @extend %indexForm-helper;
+    }
+
+    button{
+        @extend %indexForm-helper;
+    }
+
+}
+
+#indexFormTitle{
+    height: 100%;
+    margin-top: $margin-big-size;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+    }
+
+    p{
+        font-size: $font-bigger-size;
+        text-align: center;
+        position: relative;
+    }
+}
+/* FORM TERMINA */

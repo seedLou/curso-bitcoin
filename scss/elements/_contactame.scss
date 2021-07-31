@@ -1,0 +1,168 @@
+/* CONTACTAME EMPIEZA */
+
+
+#contactameh2{
+    text-align: center;
+    padding: $padding-bigger-size;
+    font-size: $font-bigger-size;
+    margin: 0;
+    background-color: $light-grey;
+    color: $coin-white;
+    
+}
+
+#contactameSuscribite{
+    margin-bottom: $margin-biggest-size;
+    margin-top: $margin-big-size;
+}
+
+#contactameA{
+    text-decoration: none;
+    margin: 0;
+
+    h3{
+        height: 60px;
+        margin: 0;
+        font-size: $font-title-size;
+        color: #990000;
+        background-color: $coin-color-darker;
+        text-align: center;
+
+        &:hover{font-size: $font-interest-size;}
+    }
+}
+
+@mixin slider-helper($padding, $height, $back-color){
+    padding: $padding;
+    height: $height;
+    background-color: $back-color;
+}
+@mixin slider-img-helper($width, $height, $border, $border-radius, $z-index, $object-fit){
+    width: $width;
+    height: $height;
+    border: $border;
+    border-radius: $border-radius;
+    z-index: $z-index;
+    object-fit: $object-fit;
+}
+@mixin estaimg-helper($display, $position, $left){
+    display: $display;
+    position: $position;
+    left: $left;
+}
+@mixin estep-container-helper($z-index, $padding, $text-align, $back-color){
+    z-index: $z-index;
+    padding: $padding;
+    text-align: $text-align;
+    background-color: $back-color;
+}
+
+
+@media (min-width: $device-media-medium-min-width){
+
+
+    #slider{
+        @include slider-helper($padding-big-size 0 $padding-big-size 0, 80vh, $light-grey);
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    
+        img{
+            @include slider-img-helper(16vw, 16vw, solid 2px $coin-color, 100%, 2, cover);
+            cursor: pointer;    
+        }
+    }
+
+    #estep-container{
+        @include estep-container-helper(0.5, $padding-big-size, center, $coin-color);
+        width: 0;
+        height: 22vw;
+        visibility: hidden;
+        position: relative;
+        left: 30vw;
+
+        &:hover{
+            .estep{
+                visibility: visible;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    
+    .estep{
+        visibility: hidden;
+        padding-right: $padding-big-size;
+        color: $light-grey;
+    }
+    
+    #estaimg{
+        @include estaimg-helper(inline-block, relative, 42vw);
+        transition-duration: 1s;    
+
+        &:active + #estep-container{
+            visibility: visible;
+            width: 40vw;
+            left: 5vw;
+            transition-duration: 1s;
+        }
+        &:active{
+            left:62vw;
+            #slider{
+                justify-content: center;
+            }
+        }
+    }
+    
+    #estep-container:hover .estep{
+        visibility: visible;
+        transition-duration: 0.2s;
+    }
+    
+    
+    
+}
+
+@media (min-width: $device-media-large-min-width){
+
+    #estep-container{
+        height: 14vw;
+    }
+}
+
+@media (max-width:$device-media-medium-min-width){
+
+    #slider{
+        @include slider-helper($padding-big-size 0 $padding-big-size 0,80vh , $light-grey);
+    
+        img{
+            @include slider-img-helper(16vw, 16vw, solid 15px $coin-color, 100%, 2, cover);
+        }
+    }
+    
+    #estaimg{
+        @include estaimg-helper(block, relative, 42vw);
+        top: 3vw;
+        margin-top: $margin-bigger-size;
+    }
+
+    #estep-container{
+        @include estep-container-helper(0.5, $padding-big-size, center, $coin-color);
+        display: block;
+    }
+    
+    .estep{
+        padding-right: $padding-big-size;
+        color: $grey;
+    }
+
+    @media(max-width:$device-media-small-min-width){
+        #slider img{
+            width:30vw;
+            height: 30vw;
+            left: 37vw;
+        }
+    }
+}
+
+
+/* CONTACTAME TERMINA */

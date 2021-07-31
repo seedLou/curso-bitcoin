@@ -1,0 +1,75 @@
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>CursoBitcoin</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <div class="col-xs-12 col-md-8">
+                    <h1 id="Title">Fredy Bits</h1>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="btn-group">
+                        <a class="btn btn-primary" id="navButton" href="index.html">Home</a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" id="navButton" data-toggle="dropdown">
+                            Curso
+                            </button>
+                            <div class="dropdown-menu" id="down">
+                            <a class="dropdown-item" href="CursoCW.html#Concepto">Concepto</a>
+                            <a class="dropdown-item" href="CursoCW.html#Wallet">Wallet</a>
+                            <a class="dropdown-item" href="CursoIC.html#Comprar">Comprar</a>
+                            <a class="dropdown-item" href="CursoIC.html#Invertir">Invertir</a>
+                            <a class="dropdown-item" href="CursoComenta.html">Comenta</a>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary" id="navButton" href="Contactame.html">Contactame</a>
+                    </div>
+                </div>
+            </header>
+            
+            <main id="comenta">
+
+                <form id="comentaForm" action="envia.php" method="POST" enctype="multipart/form-data" class="unirseComunidad">
+                    <fieldset>
+                        <div id="legend"> <legend>Comenta que te pareció el curso</legend></div>
+                        <textarea class="comentaFormInput" name="opinión" placeholder="Escribe tu comentario"cols="30" rows="10"></textarea>
+
+                        <input class="comentaFormInput" id="email" type="email" placeholder="Email" maxlength="100">
+
+                        <input class="comentaFormInput" id="password" type="password" placeholder="*******">
+
+                        <div class="comentaFormInput" id="formCheckbox">
+                            <label for="name">No soy un robot</label>
+                            <input type="checkbox" name¨="captcha" value="1">
+                            </div>
+                        <input class="comentaSubmit" id="comentaFormSubmit" type="submit" name="submit" value="Comenta">
+                        <input class="comentaSubmit" id="comentaFormReset" type="reset" name="reset" value="Borrar">
+                    </fieldset>
+                </form>
+            </main>
+
+            <footer class="row d-block" id="flexFooter">
+                <div class="col-xs-6 float-left">
+                    <div class="row">
+                        <div class="col-xs-12"><p>Fredybits@gmail.com</p></div>
+                        <div class="col-xs-6"><a href="https://www.instagram.com/">Instagram</a></div>
+                        <div class="col-xs-6"><a href="https://ar.linkedin.com/">Linkedin</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 float-left">
+                    <p id="mod">Ultima modificación...</p>
+                </div>
+            </footer>
+        </div>
+    </body> 
+</html>

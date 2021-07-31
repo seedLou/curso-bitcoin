@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>CursoBitcoin</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12 col-md-8">
+                <h1 id="Title">Fredy Bits</h1>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="btn-group">
+                    <a class="btn btn-primary" id="navButton" href="index.html">Home</a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" id="navButton" data-toggle="dropdown">
+                        Curso
+                        </button>
+                        <div class="dropdown-menu" id="down">
+                        <a class="dropdown-item" href="CursoCW.html#Concepto">Concepto</a>
+                        <a class="dropdown-item" href="CursoCW.html#Wallet">Wallet</a>
+                        <a class="dropdown-item" href="CursoIC.html#Comprar">Comprar</a>
+                        <a class="dropdown-item" href="CursoIC.html#Invertir">Invertir</a>
+                        <a class="dropdown-item" href="CursoComenta.html">Comenta</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" id="navButton" href="Contactame.html">Contactame</a>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-xs-12" id="indexImg">
+                <img src="media/portada.jpg" alt="Portada">	
+                <div><h2  id="imgTitle">Descubre las herramientas del mañana</h2></div>
+            </div>
+        </div>
+
+
+        <div class="row" id="indexDescr">
+            <div class="col-xs-12">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga enim, dolorem voluptas, iste ducimus facere omnis cumque, dolore, officia mollitia fugit aperiam ullam sapiente beatae labore ratione. Exercitationem voluptas, rerum</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12" id="indexForm">
+
+                <div class="row">
+
+                    <div class="col-xs-4" id="indexFormTitle">
+                        <p>NO TE PIERDAS DE NADA</p>
+                        <img src="media/flecha.png" alt="flecha">
+                    </div>
+
+                    <div class="col-xs-8" id="form">
+                        <form action="envia.php" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <legend>UNITE YA</legend>
+                                <input class="form-control" type="text" name="nombre" placeholder="Nombre Completo" maxlength="100">
+                                <input class="form-control" type="email" name="email" placeholder="Email">
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal1">
+                                    <div class="modal-dialog">
+                                    
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Muchas Gracias!</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus cumque repellat, dicta at odio asperiores maxime unde officia, quas, error repellendus! Error, dolorem maiores. Ex alias earum omnis dolor.</p>
+
+                                        <button class="btn btn-default" type="submit" name="submit"> ¡Si, quiero unirme!
+                                        </button>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default" type="button" name="modalMaker" data-toggle="modal" data-target="#Modal1"> ¡Unirme a la comunidad!
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row d-block" id="flexFooter">
+            <div class="col-xs-6 float-left">
+                <div class="row">
+                    <div class="col-xs-12"><p>Fredybits@gmail.com</p></div>
+                    <div class="col-xs-6"><a href="https://www.instagram.com/">Instagram</a></div>
+                    <div class="col-xs-6"><a href="https://ar.linkedin.com/">Linkedin</a></div>
+                </div>
+            </div>
+            <div class="col-xs-6 float-left">
+                <p id="mod">Ultima modificación...</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

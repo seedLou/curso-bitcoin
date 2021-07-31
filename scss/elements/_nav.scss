@@ -1,0 +1,30 @@
+/* NAV EMPIEZA */
+
+#navButton{
+    background-color: $light-grey;
+    color: $coin-white;
+    font-size: $font-medium-size;
+    cursor: pointer;
+    border: solid 1px $dark-grey;
+    border-radius: 3px;
+}
+
+#Title{
+    color: $coin-color;
+    padding-left: $padding-medium-size;
+}
+
+#down{
+    background-color: $light-grey;
+    text-align: center;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+        display: block;
+        padding: $padding-small-size;
+        background-color: $light-grey;
+        color: $coin-white;
+    }
+}
+/* NAV TERMINA */

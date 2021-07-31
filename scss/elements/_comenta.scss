@@ -1,0 +1,94 @@
+/* COMENTA EMPIEZA */
+
+#comenta{
+    background-color: $light-grey;
+    margin-bottom: $margin-big-size;
+
+    fieldset{
+        border: none;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    grid-template: 10vh 20vh 10vh 10vh/ 30vw 30vw 30vw;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 10px;
+    }
+}
+
+#legend{
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    text-align: center;
+    font-size: $font-bigger-size;
+    margin-top: $margin-small-size;
+}
+
+#comentaForm textarea{
+    grid-column: 1/span3;
+    grid-row: 2/3;
+    resize: none;
+    width: 92vw;
+}
+#email{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#password{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#formCheckbox{
+    grid-row: 3/4;
+    grid-column: 3/4;
+
+    text-align: center;
+    align-self: center;
+    padding: $padding-small-size;
+    font-size: $font-medium-size;
+}
+
+.comentaFormInput{
+
+    background-color: $grey;
+    color: $coin-color;
+
+    font-size: $font-medium-size;
+
+    padding: $padding-medium-size;
+    border: none;
+    outline: 1px solid black;
+
+    &::placeholder{ color:$coin-color;}
+}
+
+#comentaFormSubmit{
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+#comentaFormReset{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.comentaSubmit{
+    background-color:$coin-color;
+    border: none;
+
+    &:hover{background-color: $coin-color-dark;}
+    &:active{transform: scale(.98);}
+}
+
+@media (min-width:$device-media-small-min-width){
+    #comenta{
+        margin-bottom: $margin-bigger-size;
+    }
+    #formCheckbox{
+        padding: $padding-big-size;
+    }
+}
+
+/* COMENTA TERMINA */

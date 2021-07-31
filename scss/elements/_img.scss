@@ -1,0 +1,51 @@
+/* IMG EMPIEZA */
+
+#indexImg{
+    height: 85vh;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        object-position: 70%;
+    }
+}
+
+#imgTitle{
+
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    top: -30vw;
+    background-color: $coin-color;
+    color: $coin-white;
+    padding: $padding-medium-size;
+    border-radius: 7px;
+    text-shadow: 3px 3px 2px $coin-color-dark;
+    font-size: 3.5vw;
+    z-index: 5;
+    text-align: center;
+    width: 50%;
+}
+
+@mixin media-helper($height, $top, $font-size){
+    #indexImg{
+        height: $height;
+    }
+    #imgTitle{
+        top: $top;
+        font-size: $font-size;
+    }
+}
+
+@media (min-width: $device-media-large-min-width){
+
+    @include media-helper(90vh,-10vw,2.5vw);
+
+}
+@media (min-width: $device-media-medium-min-width) and (max-width:$device-media-large-min-width){
+
+    @include media-helper(85vh,-15vw,2.5vw);
+}
+
+/* IMG TERMINA */

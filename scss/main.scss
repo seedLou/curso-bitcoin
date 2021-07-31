@@ -1,0 +1,17 @@
+@import "global-variables";
+
+body{
+    margin: 0;
+}
+
+
+
+@import "elements/layout";
+@import "elements/nav";
+@import "elements/img";
+@import "elements/descrp";
+@import "elements/form";
+@import "elements/footer";
+@import "elements/concepto";
+@import "elements/comenta";
+@import "elements/contactame";

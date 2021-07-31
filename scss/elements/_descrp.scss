@@ -1,0 +1,18 @@
+/* DESCRP COMIENZA */
+
+#indexDescr{
+    background-color: $grey;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    width: 100%;
+    margin-top: $margin-bigger-size;
+
+    p{
+        color:$coin-white;
+        width: 100%;
+        font-size: $font-medium-size;
+        text-align: center;
+    }
+}
+/* DESCRP TERMINA */

@@ -1,0 +1,37 @@
+/* LAYOUT EMPIEZA */
+
+.col-xs-12 {
+    padding-right: 0 !important;
+}
+  
+.row {
+margin-right: 0 !important; 
+}
+
+.container-fluid {
+background-color: $grey;
+padding: 0 !important; 
+}
+
+#flexHeader {
+background-color: $grey;
+display: flex;
+align-items: center;
+justify-content: flex-start; 
+}
+
+#indexDescr {
+height: 10vh;
+margin-bottom: $margin-bigger-size; 
+}
+
+#indexForm {
+height: 40vh; 
+}
+
+#comenta {
+width: 100%;
+height: 70vh; 
+}
+  
+/* LAYOUT TERMINA */
